@@ -23,21 +23,21 @@ const ProjectCard: React.FC<Props> = ({
         className='group relative h-52 rounded-t-xl bg-foreground/10 bg-cover transition-all duration-500 md:h-72'
         style={{ backgroundImage: `url(${imgUrl})` }}
       >
-        <div className='overlay absolute left-0 top-0 flex h-full w-full flex-row items-center justify-center gap-2 rounded-t-lg bg-foreground/10 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-80 lg:hidden lg:group-hover:flex'>
+        <div className='overlay absolute left-0 top-0 flex h-full w-full flex-row items-center justify-center gap-2 rounded-t-lg bg-black/60 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-80 lg:hidden lg:group-hover:flex'>
           {gitUrl && (
             <Link
               href={gitUrl}
-              className='group/link grid size-14 cursor-pointer place-items-center rounded-full border-2 border-foreground hover:border-destructive'
+              className='grid size-14 cursor-pointer place-items-center rounded-full border-4 border-white text-white hover:border-primary hover:text-primary'
             >
-              <Code2 className='size-10 group-hover/link:text-destructive' />
+              <Code2 className='size-10' />
             </Link>
           )}
           {previewUrl && (
             <Link
               href={previewUrl}
-              className='group/link grid size-14 cursor-pointer place-items-center rounded-full border-2 border-foreground hover:border-destructive'
+              className='grid size-14 cursor-pointer place-items-center rounded-full border-4 border-white text-white hover:border-primary hover:text-primary'
             >
-              <Eye className='size-10 group-hover/link:text-destructive' />
+              <Eye className='size-10' />
             </Link>
           )}
         </div>
