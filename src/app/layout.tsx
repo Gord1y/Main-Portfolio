@@ -57,9 +57,9 @@ export default function RootLayout({
       <body className={rubik.className}>
         <ThemeProvider attribute='class' defaultTheme='dark'>
           <PageLayout>{children}</PageLayout>
-          <Analytics />
-          <SpeedInsights />
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
