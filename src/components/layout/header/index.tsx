@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const { setTheme } = useTheme()
 
   return (
-    <header className='bg-background/50 fixed left-0 right-0 top-0 z-10 flex h-20 w-full items-center justify-center border-b'>
+    <header className='fixed left-0 right-0 top-0 z-10 flex h-20 w-full items-center justify-center border-b bg-background/80'>
       <section className='container flex h-fit justify-between'>
         <Link className='text-xl font-bold lg:text-2xl' href={'/'}>
           Gord1y
