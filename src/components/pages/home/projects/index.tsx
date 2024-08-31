@@ -9,57 +9,38 @@ import ProjectTag from './tag'
 const projectsData = [
   {
     id: 1,
-    title: 'React Portfolio Website',
-    description: 'Project 1 description',
-    image: '/images/projects/1.png',
-    tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/'
+    title: 'Satoshi',
+    description: 'The Bitcoin App',
+    image: '/projects/1.png',
+    tag: ['All', 'Web', 'Mobile'],
+    gitUrl: 'https://github.com/satoshimoney',
+    previewUrl: 'https://satoshi.money/'
   },
   {
     id: 2,
-    title: 'Potography Portfolio Website',
-    description: 'Project 2 description',
-    image: '/images/projects/2.png',
-    tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/'
+    title: 'ActiveDocks',
+    description:
+      'My personal startup project, which was a copy of the well-known Diia and developed and grew with me. No longer active.',
+    image: '/projects/2.png',
+    tag: ['All', 'Web', 'Mobile']
   },
   {
     id: 3,
-    title: 'E-commerce Application',
-    description: 'Project 3 description',
-    image: '/images/projects/3.png',
-    tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/'
+    title: 'The Kiosko',
+    description:
+      'I Made a front part for software in a coworking center, a mobile application for internal work of services and employees, as well as websites for users to work with data and mobile admin panel.',
+    image: '/projects/3.png',
+    tag: ['All', 'Web', 'Mobile'],
+    previewUrl: 'https://thekiosko.com/'
   },
   {
     id: 4,
-    title: 'Food Ordering Application',
-    description: 'Project 4 description',
-    image: '/images/projects/4.png',
-    tag: ['All', 'Mobile'],
-    gitUrl: '/',
-    previewUrl: '/'
-  },
-  {
-    id: 5,
-    title: 'React Firebase Template',
-    description: 'Authentication and CRUD operations',
-    image: '/images/projects/5.png',
+    title: 'Katyas Space',
+    description: 'This is a portfolio website for a english teacher.',
+    image: '/projects/4.jpg',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/'
-  },
-  {
-    id: 6,
-    title: 'Full-stack Roadmap',
-    description: 'Project 5 description',
-    image: '/images/projects/6.png',
-    tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/'
+    gitUrl: 'https://github.com/Gord1y/katyasspace',
+    previewUrl: 'https://katyas.space/'
   }
 ]
 

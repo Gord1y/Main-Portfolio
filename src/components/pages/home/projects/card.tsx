@@ -2,14 +2,12 @@ import { Code2, Eye } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
-import { cn } from '@/lib/utils'
-
 interface Props {
   imgUrl: string
   title: string
   description: string
-  gitUrl: string
-  previewUrl: string
+  gitUrl?: string
+  previewUrl?: string
 }
 
 const ProjectCard: React.FC<Props> = ({
@@ -22,24 +20,26 @@ const ProjectCard: React.FC<Props> = ({
   return (
     <div>
       <div
-        className={cn(
-          'group relative h-52 rounded-t-xl bg-foreground/10 bg-cover transition-all duration-500 md:h-72',
-          `bg-[${imgUrl}]`
-        )}
+        className='group relative h-52 rounded-t-xl bg-foreground/10 bg-cover transition-all duration-500 md:h-72'
+        style={{ backgroundImage: `url(${imgUrl})` }}
       >
         <div className='overlay absolute left-0 top-0 flex h-full w-full flex-row items-center justify-center gap-2 rounded-t-lg bg-foreground/10 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-80 lg:hidden lg:group-hover:flex'>
-          <Link
-            href={gitUrl}
-            className='group/link grid size-14 cursor-pointer place-items-center rounded-full border-2 border-foreground hover:border-destructive'
-          >
-            <Code2 className='size-10 group-hover/link:text-destructive' />
-          </Link>
-          <Link
-            href={previewUrl}
-            className='group/link grid size-14 cursor-pointer place-items-center rounded-full border-2 border-foreground hover:border-destructive'
-          >
-            <Eye className='size-10 group-hover/link:text-destructive' />
-          </Link>
+          {gitUrl && (
+            <Link
+              href={gitUrl}
+              className='group/link grid size-14 cursor-pointer place-items-center rounded-full border-2 border-foreground hover:border-destructive'
+            >
+              <Code2 className='size-10 group-hover/link:text-destructive' />
+            </Link>
+          )}
+          {previewUrl && (
+            <Link
+              href={previewUrl}
+              className='group/link grid size-14 cursor-pointer place-items-center rounded-full border-2 border-foreground hover:border-destructive'
+            >
+              <Eye className='size-10 group-hover/link:text-destructive' />
+            </Link>
+          )}
         </div>
       </div>
       <div className='mt-3 rounded-b-xl bg-foreground/10 px-4 py-6'>
