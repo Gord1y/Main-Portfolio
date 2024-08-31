@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
             Contact Me
           </Link>
           <Link
-            href='/'
+            href='/DanyloHordiienkoCV.pdf'
             target='_blank'
             className={buttonVariants({
               size: 'lg',
