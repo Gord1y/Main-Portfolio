@@ -1,6 +1,7 @@
 import AboutSection from './about'
 import AchievementsSection from './achievements'
 import HeroSection from './hero'
+import ProjectsSection from './projects'
 
 const HomePage: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage: React.FC = () => {
       <HeroSection />
       <AchievementsSection />
       <AboutSection />
+      <ProjectsSection />
     </>
   )
 }
