@@ -112,7 +112,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
+      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-2'>
         <FormField
           control={form.control}
           name='email'
@@ -168,7 +168,7 @@ const ContactForm: React.FC = () => {
             </FormItem>
           )}
         />
-        <Button type='submit' disabled={isLoading}>
+        <Button className='!mt-4' type='submit' disabled={isLoading}>
           {isLoading ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
