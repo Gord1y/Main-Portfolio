@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <Link className='text-lg font-bold lg:text-xl' href={'/'}>
           Gord1y
         </Link>
-        <p className='text-foreground/50'>All rights reserved.</p>
+        <p className='text-foreground/50'>All rights reserved © 2024</p>
       </section>
     </footer>
   )
