@@ -46,7 +46,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className='items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16 xl:px-16'
+      className='items-center gap-8 px-4 py-20 md:grid md:grid-cols-2 lg:py-24 xl:gap-16 xl:px-16'
       id='about'
     >
       <Image

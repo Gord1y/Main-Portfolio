@@ -3,6 +3,7 @@
 import { Menu, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -21,9 +22,10 @@ import {
 
 const Header: React.FC = () => {
   const { setTheme } = useTheme()
+  const { push } = useRouter()
 
   return (
-    <header className='fixed left-0 right-0 top-0 z-10 flex h-20 w-full items-center justify-center border-b bg-background/80'>
+    <header className='fixed left-0 right-0 top-0 z-10 flex h-16 w-full items-center justify-center border-b bg-background/90 lg:h-20'>
       <section className='container flex h-fit justify-between'>
         <Link className='text-xl font-bold lg:text-2xl' href={'/'}>
           Gord1y
@@ -38,9 +40,15 @@ const Header: React.FC = () => {
             <DropdownMenuLabel>Menu</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>Go to About</DropdownMenuItem>
-              <DropdownMenuItem>Go to Projects</DropdownMenuItem>
-              <DropdownMenuItem>Go to Contact</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => push('#about')}>
+                Go to About
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => push('#projects')}>
+                Go to Projects
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => push('#contact')}>
+                Go to Contact
+              </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>

@@ -8,7 +8,7 @@ const ContactSection: React.FC = () => {
   return (
     <section
       id='contact'
-      className='my-12 grid gap-8 py-24 md:my-12 md:grid-cols-2'
+      className='grid gap-8 py-20 md:my-12 md:grid-cols-2 lg:py-24'
     >
       <section className='relative flex h-full flex-col items-center justify-center gap-2 md:items-start'>
         <h5 className='my-2 text-xl font-bold md:text-2xl lg:text-4xl'>

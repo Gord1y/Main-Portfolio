@@ -12,7 +12,7 @@ import HeroImage from '@/assets/images/hero-image.jpg'
 
 const HeroSection: React.FC = () => {
   return (
-    <section className='container grid grid-cols-1 py-10 sm:grid-cols-12'>
+    <section className='container grid grid-cols-1 py-20 sm:grid-cols-12 lg:py-24'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
