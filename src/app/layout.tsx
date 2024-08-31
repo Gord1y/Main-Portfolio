@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Rubik } from 'next/font/google'
 
+import PageLayout from '@/components/layout'
 import { ThemeProvider } from '@/components/layout/providers/theme-provider'
 
 import './globals.css'
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={rubik.className}>
         <ThemeProvider attribute='class' defaultTheme='dark'>
-          {children}
+          <PageLayout>{children}</PageLayout>
         </ThemeProvider>
       </body>
     </html>
