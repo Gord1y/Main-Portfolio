@@ -168,7 +168,12 @@ const ContactForm: React.FC = () => {
             </FormItem>
           )}
         />
-        <Button className='!mt-4' type='submit' disabled={isLoading}>
+        <Button
+          size={'lg'}
+          className='!mt-4'
+          type='submit'
+          disabled={isLoading}
+        >
           {isLoading ? 'Sending...' : 'Send Message'}
         </Button>
       </form>

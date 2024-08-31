@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
             href='/#contact'
             className={buttonVariants({
               size: 'lg',
-              variant: 'secondary'
+              variant: 'default'
             })}
           >
             Contact Me
@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
             target='_blank'
             className={buttonVariants({
               size: 'lg',
-              variant: 'destructive'
+              variant: 'secondary'
             })}
           >
             Download CV

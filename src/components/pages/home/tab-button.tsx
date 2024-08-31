@@ -18,7 +18,7 @@ const TabButton: React.FC<PropsWithChildren<Props>> = ({
       <p
         className={cn('mr-3 font-semibold hover:text-primary', {
           'text-primary': active,
-          'text-primary/50': !active
+          'text-foreground': !active
         })}
       >
         {children}
