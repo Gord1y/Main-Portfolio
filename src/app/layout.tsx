@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
 import { Rubik } from 'next/font/google'
 
@@ -55,6 +57,8 @@ export default function RootLayout({
       <body className={rubik.className}>
         <ThemeProvider attribute='class' defaultTheme='dark'>
           <PageLayout>{children}</PageLayout>
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
