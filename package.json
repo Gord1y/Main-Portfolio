@@ -1,7 +1,29 @@
 {
   "name": "main-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "author": {
+    "name": "Kunal Sharda",
+    "email": "gordiyvl@gmail.com",
+    "url": "https://gord1y.dev"
+  },
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gord1y/Main-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website",
+    "developer",
+    "designer",
+    "react",
+    "next",
+    "tailwindcss",
+    "typescript"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
