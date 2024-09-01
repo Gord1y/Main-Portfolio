@@ -2,6 +2,12 @@
 
 This is a portfolio website built with Next.js and Tailwind CSS. It showcases your skills, projects, and achievements in an elegant and responsive design.
 
+## Images
+
+Here is image which is showing initial view of the application.
+
+![This image is showing app](public/preview.png 'Application Screenshot')
+
 ## Features
 
 - Projects section with filter
@@ -19,12 +25,6 @@ This is a portfolio website built with Next.js and Tailwind CSS. It showcases yo
 - Add more themes
 - Add more animations
 - Add more sections
-
-## Images
-
-Here is image which is showing initial view of the application.
-
-![This image is showing app](public/preview.png 'Application Screenshot')
 
 ## Getting Started
 
