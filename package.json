@@ -1,10 +1,10 @@
 {
   "name": "main-portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal portfolio",
   "author": {
-    "name": "Kunal Sharda",
-    "email": "gordiyvl@gmail.com",
+    "name": "Danylo Hordiienko",
+    "email": "admin@gord1y.dev",
     "url": "https://gord1y.dev"
   },
   "license": "MIT",
@@ -42,7 +42,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.31",
     "lucide-react": "^0.436.0",
-    "next": "14.2.7",
+    "next": "14.2.35",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-animated-numbers": "^0.18.0",
