@@ -1,6 +1,7 @@
 import { Resend } from 'resend'
 
 import EmailTemplate from './email-template'
+import { NextResponse } from 'next/server'
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
 
@@ -22,11 +23,11 @@ export async function POST(req: Request) {
     })
 
     if (error) {
-      return Response.json({ error }, { status: 500 })
+      return NextResponse.json({ error }, { status: 500 })
     }
 
-    return Response.json(data)
+    return NextResponse.json(data)
   } catch (error) {
-    return Response.json({ error }, { status: 500 })
+    return NextResponse.json({ error }, { status: 500 })
   }
 }
