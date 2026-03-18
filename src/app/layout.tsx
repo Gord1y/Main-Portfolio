@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'gord1y.dev',
-    emails: ['gordiyvl@gmail.com'],
+    emails: ['contact@gord1y.dev'],
     locale: 'en_US',
     url: 'https://gord1y.dev',
     title: 'Gord1y.dev - Danylo Hordiienko personal portfolio'

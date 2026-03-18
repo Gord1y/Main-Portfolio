@@ -18,17 +18,17 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'ActiveDocks',
-    description:
-      'My personal startup project, which was a copy of the well-known Diia and developed and grew with me. No longer active.',
+    title: 'SiteSync',
+    description: 'AI-Powered Task Management Tool',
     image: '/projects/2.png',
-    tag: ['All', 'Web', 'Mobile']
+    tag: ['All', 'Web'],
+    previewUrl: 'https://www.sitesync.ai/'
   },
   {
     id: 3,
     title: 'The Kiosko',
     description:
-      'I Made a front part for software in a coworking center, a mobile application for internal work of services and employees, as well as websites for users to work with data and mobile admin panel.',
+      'Software in a coworking center, internal mobile application, websites for users to work with data and mobile admin panel.',
     image: '/projects/3.png',
     tag: ['All', 'Web', 'Mobile'],
     previewUrl: 'https://thekiosko.com/'

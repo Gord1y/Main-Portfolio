@@ -34,7 +34,7 @@ const ContactSection: React.FC = () => {
             <LinkedInLogoIcon className='size-10' />
           </Link>
           <Link
-            href='mailto:gordiyvl@gmail.com'
+            href='mailto:contact@gord1y.dev'
             target='_blank'
             className='text-foreground/50 hover:text-primary'
           >

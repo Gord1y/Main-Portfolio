@@ -40,9 +40,7 @@ const TAB_DATA = [
 ]
 
 const AboutSection = () => {
-  const [tab, setTab] = useState<'skills' | 'tech-stack' | 'certifications'>(
-    'skills'
-  )
+  const [tab, setTab] = useState<'skills' | 'tech-stack'>('tech-stack')
 
   return (
     <section
@@ -71,9 +69,7 @@ const AboutSection = () => {
           {TAB_DATA.map(data => (
             <TabButton
               key={data.id}
-              selectTab={() =>
-                setTab(data.id as 'skills' | 'tech-stack' | 'certifications')
-              }
+              selectTab={() => setTab(data.id as 'skills' | 'tech-stack')}
               active={tab === data.id}
             >
               {data.title}

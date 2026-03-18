@@ -120,7 +120,7 @@ const ContactForm: React.FC = () => {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder='gordiyvl@gmail.com' {...field} />
+                <Input placeholder='contact@gord1y.dev' {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

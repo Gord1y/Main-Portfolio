@@ -73,6 +73,6 @@ Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
 
-Danylo 'Gord1y' Hordiienko - gordiyvl@gmail.com
+Danylo 'Gord1y' Hordiienko - contact@gord1y.dev
 
 Project Link: https://github.com/Gord1y/Main-Portfolio
